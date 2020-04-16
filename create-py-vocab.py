@@ -46,7 +46,7 @@ def main():
     else:
       assert l not in symbol_counter, "special token %r used by vocab" % l
 
-  out = open(args.out, "w")
+  out = open(args.out, "w",encoding='utf-8')
   out.write("{\n")
   out.write("%r: 0,\n" % beginseq)
   out.write("%r: 0,\n" % endseq)
